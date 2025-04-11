@@ -22,7 +22,7 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@3.106.116.111 << 'EOF'
             cd /var/www/html/Pertemuan-5-Cloud-Computing
-            sudo git pull
+            sudo git pull origin main
             # Restart Nginx or any other service if needed
             sudo systemctl restart nginx
           EOF
